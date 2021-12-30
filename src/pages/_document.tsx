@@ -5,9 +5,8 @@ export default class Mydocument extends Document {
         return (
             <Html>
                 <Head>
-                    {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
-                    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lexend:wght@500;600&display=swap" rel="stylesheet" /> */}
-
+                    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:ital,wght@0,500;1,700&display=swap" rel="stylesheet"/>
                     {/* <link rel="shortcut icon" href="/favicon.png" type="image/png"/> */}
                 </Head>
                 <body>
