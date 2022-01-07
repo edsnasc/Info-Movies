@@ -1,5 +1,5 @@
 .header {
-    padding: 0px 15px;
+    padding: 0  2rem ;
     height: 4rem;
 
     display: flex;
@@ -17,8 +17,8 @@
     }
 
     .menuList {
+        margin: auto;
         display: flex;
-
         list-style: none;
         
         li {
