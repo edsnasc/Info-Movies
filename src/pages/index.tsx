@@ -14,30 +14,24 @@ type MovieProps = {
 }
 
 export default function Home({ movies }: MovieProps ) {
-  console.log(movies)
+  //console.log(movies)
 
   const carousel = useRef(null)
   const marvelCarousel = useRef(null)
 
-  const handleLeftClick = (e) => {
-    e.preventDefault()
-
-    marvelCarousel.current.scrollLeft -= marvelCarousel.current.offsetWidth;
-    // carousel.current.scrollLeft -= carousel.current.offsetWidth;
+  const handleLeftClick = (id) => {
+    id.current.scrollLeft -= id.current.offsetWidth;
   };
 
-  const handleRightClick = (e) => {
-    e.preventDefault()
-    marvelCarousel.current.scrollRight += marvelCarousel.current.offsetWidth;
-    // carousel.current.scrollRight += carousel.current.offsetWidth;
+  const handleRightClick = (id) => {
+    id.current.scrollLeft += id.current.offsetWidth;
   };
-
 
   return (
     <div className={styles.titleContainer}>
       <h2>Recomended</h2>
       <div className={styles.container}>
-        <button onClick={handleLeftClick}>
+        <button onClick={() => handleRightClick(carousel)}>
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
         <div className={styles.posterContainer} ref={carousel}>
@@ -57,13 +51,13 @@ export default function Home({ movies }: MovieProps ) {
             )
           })}
         </div >
-        <button onClick={handleRightClick}>
+        <button onClick={() => handleLeftClick(carousel)}>
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
       </div>
-      <h2>Recomended</h2>
+      <h2>Spider-man special list</h2>
       <div className={styles.container}>
-        <button onClick={handleLeftClick}>
+        <button onClick={() => handleLeftClick(marvelCarousel)}>
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
         <div className={styles.posterContainer} ref={marvelCarousel}>
@@ -83,7 +77,7 @@ export default function Home({ movies }: MovieProps ) {
             )
           })}
         </div >
-        <button onClick={handleRightClick}>
+        <button onClick={() => handleRightClick(marvelCarousel)}>
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
       </div>
