@@ -1,48 +1,96 @@
+.containerHome {
+  margin-left: 3rem;
+  h2 {
+    color: #fff;
+  }
+}
 
-.titleContainer {
-    margin-left: 3rem;
-    h2 {
-      color: #fff;
-    }
-  }
-  
-  .container {
-    display: flex;
-    margin: 1rem 3rem;
-    align-items: center;
-  
-    button {
-      margin: 0 3rem 0 4rem;
-      border: none;
-      width: 3rem;
-      height: 3rem;
-      border-radius: 50%;
-  
-      position: absolute;
-      z-index: 5;
-  
-      background-color: rgba(0, 0, 0, 0.562);
-      color: #fff;
-      cursor: pointer;
-  
-      &:first-child {
-        left: 0;
-      }
-  
-      &:last-child {
-        right: 0;
-      }
-    }
-  }
-  
-  .cardBody {
-    margin-top: 1rem;
+.container {
+  display: flex;
+  margin: 1rem 3rem;
+  align-items: center;
+
+  button {
+    margin: 0 3rem 0 4rem;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 5;
+
     background-color: rgba(0, 0, 0, 0.562);
-    color: #fff666;
+    color: #fff;
+    cursor: pointer;
+
+    &:first-child {
+      left: 0;
+    }
+
+    &:last-child {
+      right: 0;
+    }
   }
-  
-  .posterContainer {
-    width: 100%;
+}
+
+.cardBody {
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.562);
+  color: #fff666;
+}
+
+.posterContainer {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  .zoom {
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.posterContainer::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.containerActors {
+  margin: 1rem 3rem;
+  display: flex;
+  align-items: center;
+
+  button {
+    margin: 0 3rem 0 4rem;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 5;
+
+    background-color: rgba(0, 0, 0, 0.562);
+    color: #fff;
+    cursor: pointer;
+
+    &:first-child {
+      left: 0;
+    }
+
+    &:last-child {
+      right: 0;
+    }
+  }
+
+  .ActorPosterContainer {
     display: flex;
     overflow-x: auto;
     overflow-x: hidden;
@@ -50,15 +98,37 @@
   
     .zoom {
       transition: 0.5s;
-      
+  
       &:hover {
         transform: scale(1.1);
       }
+
+      .cardContainer {
+        margin-left: 2rem;
+        margin-top: 1rem; 
+  
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.562);
+        color: #fff666;
+
+        .CardActor {
+          display: flex;
+
+          .img {
+            height: 15rem;
+            width: 10rem;
+          }
+          .title {
+            margin-bottom: 2rem;
+          }
+  
+        }
+      }
     }
-    
   }
-  
-  .posterContainer::-webkit-scrollbar {
-    display: none;
-  }
-  
+}
+
+.ActorPosterContainer::-webkit-scrollbar {
+  display: none;
+}
+

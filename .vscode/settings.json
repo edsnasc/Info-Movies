@@ -1,11 +1,15 @@
 {
     "cSpell.words": [
+        "actordata",
+        "birthdate",
         "Contato",
         "Detalhes",
         "fortawesome",
         "grandes",
         "imdb",
+        "lenght",
         "Mydocument",
+        "nconst",
         "pesquisar",
         "poderes",
         "preconnect",
@@ -14,5 +18,8 @@
         "resposabilidades",
         "spiderman",
         "topmovies"
+    ],
+    "cSpell.ignoreWords": [
+        "constn"
     ]
 }

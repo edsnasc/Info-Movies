@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgba(0, 0, 0, 0.562);
+    color: #fff;
+
+    .icon {
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
+

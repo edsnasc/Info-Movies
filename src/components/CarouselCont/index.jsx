@@ -8,37 +8,37 @@ export function CarouselCont() {
         <Carousel.Item>
           <img
             className="d-block"
-            src="./logo.jpg"
+            src="./W1.jpg"
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Spiderman</h3>
+            <p>stay on top of the neighborhood friend movies.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block"
-            src="./logo.jpg"
+            src="./W2.jpg"
             alt="Second slide"
           />
 
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Justice League</h3>
+            <p>Join the best DC heroes.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block"
-            src="./logo.jpg"
+            src="./W3.jpg"
             alt="Third slide"
           />
 
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>Harry Potter</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Enter the magical world of Harry Potter!
             </p>
           </Carousel.Caption>
         </Carousel.Item>
