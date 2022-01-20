@@ -24,7 +24,7 @@ type MovieProps = {
 }
 
 export default function Home({ movies, actordata }: MovieProps) {
-  console.log(actordata)
+  //console.log(actordata)
 
   const carousel = useRef(null)
   const marvelCarousel = useRef(null)

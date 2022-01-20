@@ -1,15 +1,41 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    background-color: rgba(0, 0, 0, 0.562);
-    color: #fff;
+    margin-top: 1.5rem;
+    padding: 1rem;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.562);
+  color: #fff;
+
+  p {
+    text-align: center;
     .icon {
-        height: 3rem;
-        width: 3rem;
+      height: 3rem;
+      width: 3rem;
     }
+  }
+
+  .social {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+    .img {
+      margin-left: 2rem;
+      width: 3rem;
+      height: 3rem;
+
+      transition: 0.5s;
+
+      &:hover {
+          background-color: #c2b954;
+      }
+    }
+  }
+
+  .record {
+      margin: 3rem 0 2rem 0;
+  }
 }
-
-
