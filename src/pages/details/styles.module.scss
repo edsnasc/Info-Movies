@@ -1,0 +1,39 @@
+.containerActors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .ActorPosterContainer {
+    display: flex;
+    
+      .cardContainer {
+        display: flex;
+        justify-content: center;
+
+        background-color: rgba(0, 0, 0, 0.562);
+        color: #fff666;
+
+        .CardActor {
+          h4 {
+            color: red;
+          }
+
+          span {
+            margin-left: 1rem;
+          }
+
+          display: flex;
+
+          .title {
+            margin-bottom: 2rem;
+          }
+  
+        }
+      }
+    
+  }
+}
+
+
+
+

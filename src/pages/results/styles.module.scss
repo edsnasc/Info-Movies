@@ -1,0 +1,24 @@
+.resultsContainer {
+  width: 100%;
+
+  h2 {
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+  }
+
+  .posterContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .cardBody {
+      background-color: rgba(0, 0, 0, 0.562);
+      color: #fff666;
+      a {
+        text-decoration: none;
+        color: #fff666;
+      }
+    }
+  }
+}
