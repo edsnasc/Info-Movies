@@ -17,7 +17,7 @@ type Actors = {
   birthdate: string;
   birthplace: string;
   height: number;
-  url: string
+  url: string;
 }
 
 type MovieProps = {
@@ -54,8 +54,8 @@ export default function Home({ movies, actordata }: MovieProps) {
             {movies[1].d.map(movie => {
               return (
                 <div className={styles.zoom} key={movie.id}>
-                  <Card className={styles.cardBody} style={{ width: '16rem', height: '28rem', alignItems: 'center' }}>
-                    <Card.Img variant="top" src={movie.i?.imageUrl} style={{ width: '95%', height: '20rem' }} />
+                  <Card className={styles.cardBody}>
+                    <Card.Img className={styles.cardImg} variant="top" src={movie.i?.imageUrl} style={{ height: '20rem' }} />
                     <Card.Body style={{ textAlign: 'center' }}>
                       <Card.Title><Link href={`details/${movie.id}`}><a>{movie.l}</a></Link></Card.Title>
                       <Card.Text>
@@ -81,8 +81,8 @@ export default function Home({ movies, actordata }: MovieProps) {
             {movies[0].d.map(movie => {
               return (
                 <div className={styles.zoom} key={movie.id}>
-                  <Card className={styles.cardBody} style={{ width: '16rem', height: '28rem', alignItems: 'center' }}>
-                    <Card.Img variant="top" src={movie.i?.imageUrl} style={{ width: '95%', height: '20rem' }} />
+                  <Card className={styles.cardBody}>
+                    <Card.Img className={styles.cardImg} variant="top" src={movie.i?.imageUrl} style={{ height: '20rem' }} />
                     <Card.Body style={{ textAlign: 'center' }}>
                       <Card.Title><Link href={`details/${movie.id}`}><a>{movie.l}</a></Link></Card.Title>
                       <Card.Text>
@@ -142,7 +142,7 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 
   const { data } = await api.get('/actors/list-most-popular-celebs', { params: { homeCountry: 'US', currentCountry: 'US', purchaseCountry: 'US' } })
-  const actorsList = data.slice(4, 14)
+  const actorsList = data.slice(0, 9)
 
 
   let actors = []

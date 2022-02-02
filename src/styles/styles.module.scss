@@ -1,145 +1,317 @@
-.containerHome {
-  margin: 0 2rem 0 2rem;
-}
-
-.container {
-  display: flex;
-  margin: 1rem 3rem;
-  align-items: center;
-
-  button {
+@media (min-width: 600px) {
+  .containerHome {
     margin: 0 2rem 0 2rem;
-    border: none;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-
-    position: absolute;
-    z-index: 5;
-
-    background-color: rgba(0, 0, 0, 0.562);
-    color: #fff;
-    cursor: pointer;
-
-    &:first-child {
-      left: 0;
-    }
-
-    &:last-child {
-      right: 0;
+  }
+  
+  .container {
+    display: flex;
+    margin: 1rem 3rem;
+    align-items: center;
+  
+    button {
+      margin: 0 2rem 0 2rem;
+      border: none;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+  
+      position: absolute;
+      z-index: 5;
+  
+      background-color: rgba(0, 0, 0, 0.562);
+      color: #fff;
+      cursor: pointer;
+  
+      &:first-child {
+        left: 0;
+      }
+  
+      &:last-child {
+        right: 0;
+      }
     }
   }
-}
-
-.cardBody {
-  margin-top: 1rem;
-  background-color: rgba(0, 0, 0, 0.562);
-  color: #fff666;
-  a {
-    text-decoration: none;
+  
+  .cardBody {
+    width: 16rem;
+    height: 28rem;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.562);
     color: #fff666;
 
-    &:hover {
-      color: #00FF7F;
+    .cardImg {
+      width: 95%;
+      height: 20rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff666;
+  
+      &:hover {
+        color: #00ff7f;
+      }
     }
   }
-}
-
-.posterContainer {
-  width: 100%;
-  display: flex;
-  overflow-x: auto;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-
-  .zoom {
-    margin: 1rem;
-    transition: 0.5s;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-}
-
-.posterContainer::-webkit-scrollbar {
-  display: none;
-}
-
-.containerActors {
-  margin: 1rem 3rem;
-  display: flex;
-  align-items: center;
-
-  button {
-    margin: 0 3rem 0 4rem;
-    border: none;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-
-    position: absolute;
-    z-index: 5;
-
-    background-color: rgba(0, 0, 0, 0.562);
-    color: #fff;
-    cursor: pointer;
-
-    &:first-child {
-      left: 0;
-    }
-
-    &:last-child {
-      right: 0;
-    }
-  }
-
-  .ActorPosterContainer {
+  
+  .posterContainer {
+    width: 100%;
     display: flex;
     overflow-x: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;
-
+  
     .zoom {
+      margin: 1rem;
       transition: 0.5s;
-
+  
       &:hover {
         transform: scale(1.1);
       }
-
-      .cardContainer {
-        margin-left: 2rem;
-        margin-top: 1rem;
-
-        font-size: 1rem;
-        background-color: rgba(0, 0, 0, 0.562);
-        color: #fff666;
-
-        .CardActor {
-          display: flex;
-
-          .img {
-            height: 15rem;
-            width: 10rem;
-          }
-          .title {
-            margin-bottom: 2rem;
+    }
+  }
+  
+  .posterContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .containerActors {
+    margin: 1rem 3rem;
+    display: flex;
+    align-items: center;
+  
+    button {
+      margin: 0 3rem 0 4rem;
+      border: none;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+  
+      position: absolute;
+      z-index: 5;
+  
+      background-color: rgba(0, 0, 0, 0.562);
+      color: #fff;
+      cursor: pointer;
+  
+      &:first-child {
+        left: 0;
+      }
+  
+      &:last-child {
+        right: 0;
+      }
+    }
+  
+    .ActorPosterContainer {
+      display: flex;
+      overflow-x: auto;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+  
+      .zoom {
+        transition: 0.5s;
+  
+        &:hover {
+          transform: scale(1.1);
+        }
+  
+        .cardContainer {
+          margin-left: 2rem;
+          margin-top: 1rem;
+  
+          font-size: 1rem;
+          background-color: rgba(0, 0, 0, 0.562);
+          color: #fff666;
+  
+          .CardActor {
+            display: flex;
+  
+            .img {
+              height: 15rem;
+              width: 10rem;
+            }
+            .title {
+              margin-bottom: 2rem;
+            }
           }
         }
       }
     }
   }
+  
+  .ActorPosterContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .errors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    color: #000;
+  }
 }
 
-.ActorPosterContainer::-webkit-scrollbar {
-  display: none;
+@media (max-width: 600px) {
+  .containerHome {
+    margin: 0 1rem 0 1rem;
+  }
+  
+  .container {
+    display: flex;
+    margin: 1rem 3rem;
+    align-items: center;
+  
+    button {
+      margin: 0 2rem 0 2rem;
+      border: none;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+  
+      position: absolute;
+      z-index: 5;
+  
+      background-color: rgba(0, 0, 0, 0.562);
+      color: #fff;
+      cursor: pointer;
+  
+      &:first-child {
+        left: 0;
+      }
+  
+      &:last-child {
+        right: 0;
+      }
+    }
+  }
+  
+  .cardBody {
+    width: 18.5rem;
+    height: 28rem;
+    align-items: center;
+    margin-top: 1rem;
+
+    background-color: rgba(0, 0, 0, 0.562);
+    color: #fff666;
+
+    .cardImg {
+      width: 95%;
+      height: 20rem;
+    }
+
+    a {
+
+      text-decoration: none;
+      color: #fff666;
+  
+      &:hover {
+        color: #00ff7f;
+      }
+    }
+  }
+  
+  .posterContainer {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  
+    .zoom {
+      margin: 1rem;
+      transition: 0.5s;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  
+  .posterContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .containerActors {
+    margin: 1rem 3rem;
+    display: flex;
+    align-items: center;
+  
+    button {
+      margin: 0 3rem 0 4rem;
+      border: none;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+  
+      position: absolute;
+      z-index: 5;
+  
+      background-color: rgba(0, 0, 0, 0.562);
+      color: #fff;
+      cursor: pointer;
+  
+      &:first-child {
+        left: 0;
+      }
+  
+      &:last-child {
+        right: 0;
+      }
+    }
+  
+    .ActorPosterContainer {
+      display: flex;
+      overflow-x: auto;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+  
+      .zoom {
+        transition: 0.5s;
+  
+        &:hover {
+          transform: scale(1.1);
+        }
+  
+        .cardContainer {
+          margin-left: 2rem;
+          margin-top: 1rem;
+  
+          font-size: 1rem;
+          background-color: rgba(0, 0, 0, 0.562);
+          color: #fff666;
+  
+          .CardActor {
+            display: flex;
+  
+            .img {
+              height: 15rem;
+              width: 10rem;
+            }
+            .title {
+              margin-bottom: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .ActorPosterContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .errors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    color: #000;
+  }
 }
 
-.errors {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
-  color: #000;
-}
